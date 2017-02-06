@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
  “Disruptive”, “paradigm shift”, “transforming”…. Do these words make you want to fund my hypothetical startup? After pondering why startup companies use this strange jargon, I analyzed startup funding data to discover if the ways that companies present themselves in words has an impact on their ability to accumulate funding. For this analysis, I only looked at initial seed funding, because later financing rounds require tangible results in addition to persuasive words, I also only looked at the years 2012-2015 due to limits on the data. I gathered data from Crunchbase, which includes company-written descriptions of themselves and joined this with a startup funding dataset. These descriptions are a good proxies for the “elevator pitches “that would be given to early investors. 
 <br><br><br>
 
-First, I will load the packages and my pre-assembled dataset, which can be found on this github pages.
+First, I will load the packages and my pre-assembled dataset, which can be found on this github page.
 
 
 
@@ -163,4 +163,4 @@ ggsave("plot4.png")
 
 
 
-(linked image 2). Six words were statistically significant after controlling for multiple hypothesis testing. Some (“data” and “cloud” – good, “music” – bad) correctly identified market trends during the time period. But others (“leading” - good; “community” - bad) had associations with funding that should be analyzed in future work. Most effects appear modest. My future goals are to replace the Crunchbase company description with a description scraped from the web, and make sure the description appeared around the time of the seed funding. Additionally, I plan to build a statistical model that uses this data to predict seed funding. This model will useful to startups looking for effective ways to market themselves to investors.
+Nine words were statistically significant after controlling for multiple hypothesis testing. Some (“data” and “cloud” – good, “music” – bad) correctly identified market trends during the time period. But others (“leading” - good; “community” - bad) had associations with funding that should be analyzed in future work. Most effects appear modest. My future goals are to replace the Crunchbase company description with a description scraped from the web, and make sure the description appeared around the time of the seed funding. Additionally, I plan to build a statistical model that uses this data to predict seed funding. This model will useful to startups looking for effective ways to market themselves to investors.
