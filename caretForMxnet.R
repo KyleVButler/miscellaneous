@@ -44,18 +44,3 @@ tune_table$results = apply(tune_table, 1,
                                                                tune_grid = x))
 tune_table
 
-
-
-
-
-# one f-fold cv for mxnet
-
-test = function(num_rounds=2, hidden_nodes=5) {
-model <- mx.mlp(data.x[index,], data.y[index], hidden_node=hidden_nodes, out_node=2, 
-                out_activation="softmax", activation = "relu",
-                num.round=num_rounds, array.batch.size=15, learning.rate=0.1, 
-                momentum=0.9, array.layout="rowmajor",
-                dropout=0, initializer=mx.init.Xavier(),
-                eval.metric=mx.metric.accuracy)
-}
-test()
