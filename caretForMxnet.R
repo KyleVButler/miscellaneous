@@ -1,4 +1,6 @@
 # a generic grid search function using mxnet for binary classification
+# example using sonar data
+
 
 require(mlbench)
 require(mxnet)
