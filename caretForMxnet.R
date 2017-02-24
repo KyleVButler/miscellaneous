@@ -19,7 +19,7 @@ mx_binaryclass_cv = function(data.x, data.y, folds=5, repeats=3, tune_grid,
   
   if(return_model == TRUE) {
 
-    model <- mx.mlp(data.x[index,], data.y[index], hidden_node=tune_grid[["hidden_nodes"]], 
+    model <- mx.mlp(data.x, data.y, hidden_node=tune_grid[["hidden_nodes"]], 
                     out_node=2, out_activation="softmax", activation = activation_type,
                     num.round=tune_grid[["num_rounds"]], array.batch.size=15, 
                     learning.rate=tune_grid[["learning_rate"]], 
